@@ -134,7 +134,7 @@ function Loader({ onLoadingComplete }) {
           }}
           className="mt-6 text-gray-400 text-sm tracking-widest uppercase"
         >
-          Loading Experience
+          Enter the Matrix.....
         </motion.p>
       </motion.div>
 

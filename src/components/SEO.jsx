@@ -5,7 +5,7 @@ function SEO({
   description = "Fullstack web developer passionate about creating beautiful, functional web applications. Specializing in React, Node.js, and modern web technologies.",
   keywords = "web developer, fullstack developer, react developer, javascript developer, portfolio",
   ogImage = "/og-image.jpg",
-  url = "https://yourportfolio.com", // Update this when you deploy!
+  url = "https://yourportfolio.com",
 }) {
   return (
     <Helmet>

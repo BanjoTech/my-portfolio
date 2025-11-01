@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar"; // ← Fixed to PascalCase
-import Home from "./pages/Home"; // ← Fixed to PascalCase
-import About from "./pages/About"; // ← Fixed to PascalCase
-import Projects from "./pages/Projects"; // ← Fixed to PascalCase
-import Contact from "./pages/Contact"; // ← Fixed to PascalCase
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home"; 
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 

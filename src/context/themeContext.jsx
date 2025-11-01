@@ -3,7 +3,7 @@ import { ThemeContext } from "./ThemeContext.js";
 
 export function ThemeProvider({ children }) {
   // useState - This is where the magic happens!
-  const [isDark, setIsDark] = useState(true); // Start with dark mode
+  const [isDark, setIsDark] = useState(true); // sharp!! i am Starting with dark mode
 
   // useEffect - Runs when isDark changes
   useEffect(() => {
