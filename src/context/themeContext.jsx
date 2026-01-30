@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
-import { ThemeContext } from "./ThemeContext.js";
+import { useState, useEffect } from 'react';
+import { ThemeContext } from './ThemeContext.js';
 
 export function ThemeProvider({ children }) {
   // useState - This is where the magic happens!
-  const [isDark, setIsDark] = useState(true); // sharp!! i am Starting with dark mode
+  const [isDark, setIsDark] = useState(false); // sharp!! i am Starting with light mode
 
   // useEffect - Runs when isDark changes
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove('dark');
     }
   }, [isDark]);
 
