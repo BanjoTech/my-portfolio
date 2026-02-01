@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { HiArrowUp } from "react-icons/hi";
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { HiArrowUp } from 'react-icons/hi';
 
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,17 +15,17 @@ function ScrollToTop() {
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
     // Cleanup
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
   // Scroll to top smoothly
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -38,12 +38,12 @@ function ScrollToTop() {
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.3 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-4 bg-green-400 text-black rounded-full shadow-lg hover:bg-green-500 transition z-50 group"
+          className='fixed bottom-24 right-8 p-4 bg-green-400 text-black rounded-full shadow-lg hover:bg-green-500 transition z-50 group'
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          aria-label="Scroll to top"
+          aria-label='Scroll to top'
         >
-          <HiArrowUp className="w-6 h-6 group-hover:animate-bounce" />
+          <HiArrowUp className='w-6 h-6 group-hover:animate-bounce' />
         </motion.button>
       )}
     </AnimatePresence>
